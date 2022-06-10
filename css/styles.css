@@ -293,11 +293,11 @@ color: var(--accent-color);
      /*-----------------     section -----------------    */
       /* ---------about--------- */
 
-        .no-padding {
+.no-padding {
         padding-top: 0;
     } 
 
-      .about {
+.about {
     display: flex;
     margin-left: -30px;
     margin-top: -30px;
@@ -451,6 +451,11 @@ color: var(--primary-white-color);
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-flex {
+    display: flex;
+    align-items: center;
+    
+}
 
 
 
@@ -510,11 +515,10 @@ color: var(--primary-white-color);
 }
 
 
-.footer-box-soc {
-    display: flex;
-}
+
 
 .footer-title {
+    margin-bottom: 20px;
     font-family: 'Roboto';
     font-style: normal;
     font-size: 14px;
@@ -524,9 +528,14 @@ color: var(--primary-white-color);
     color: var(--primary-white-color);
 }
 
+.footer-box-soc {
+  margin-left: 70px;
+}
+
 .footer-soc-list {
     display: flex;
     justify-content: center;
+   
 }
 
 .footer-soc-list .item {
