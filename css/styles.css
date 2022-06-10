@@ -7,6 +7,7 @@
     --primary-white-color: #FFFFFF;
     --general-background-color: #F5F4FA;
     --secondary-btn-color: #212121;
+    --icon-color: #AFB1B8;
     
 }
 
@@ -134,7 +135,7 @@ img {
  .site-contact {
      display: flex;
      margin-left: auto;
-     align-items: center;
+     align-items: center; 
      justify-content: center;
  }
 
@@ -148,9 +149,9 @@ img {
  }
 
 
-
  .site-contact .link {
     display: flex;
+    align-items: center;
     justify-content: center;
     font-family: 'Roboto',sans-serif;
     font-style: normal;
@@ -260,7 +261,17 @@ color: var(--accent-color);
     flex-basis: calc(100%/4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    }
+}
+
+.box-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--general-background-color);
+}
  
  
 .feature-list .title {
@@ -385,7 +396,7 @@ margin-bottom: 10px;
     height: 100%;
     border-radius: 50%;
     background-color: var(--primary-white-color);
-    color: #AFB1B8;
+    color: var(--icon-color);
 
 }
 .team-soc-icon {
@@ -395,7 +406,39 @@ margin-bottom: 10px;
 .team-soc-link:hover,
 .team-soc-link:focus {
 background-color: var(--accent-color);
-color: var();
+color: var(--primary-white-color);
+}
+/* ----------------clients----------------- */
+.clients-list {
+    display: flex;
+}
+
+.clients-list .item {
+    width: 170px;
+    height: 92px;
+    margin-left: 30px;
+}
+.clients-list .item:first-child {
+    margin-left: 0;
+}
+.clients-link {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border: 1px solid var(--icon-color);
+        border-radius: 4px;
+        color: var(--icon-color);
+}
+.clients-icon {
+    fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 
@@ -408,6 +451,8 @@ color: var();
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
+
 
 .logo-footer {
     display: inline-block;
@@ -463,6 +508,64 @@ color: var();
 .footer-list .link:focus {
     color: var(--accent-color);
 }
+
+
+.footer-box-soc {
+    display: flex;
+}
+
+.footer-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+}
+
+.footer-soc-list {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-soc-list .item {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+}
+
+.footer-soc-list .item:first-child {
+    margin-left: 0;
+}
+
+.footer-soc-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--icon-color);
+
+}
+
+.footer-soc-icon {
+    fill: currentColor;
+}
+
+.footer-soc-link:hover,
+.footeer-soc-link:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+}
+
+
+
+
+
+
 /* --------------------portfolio----------------- */
 /* ---------------------filter------------------- */
 .filter {
@@ -476,27 +579,28 @@ color: var();
 
 
 .filter-btn {
-display: inline-block;
-border-radius: 4px;
-padding: 6px 22px;
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
 
-color: var(--secondary-btn-color);
-background-color: var(--general-background-color);
-cursor: pointer;
+    color: var(--secondary-btn-color);
+    background-color: var(--general-background-color);
+    cursor: pointer;
 
-font-family: inherit;
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-letter-spacing: 0.03em;
-border: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    border: none;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* --------------works----------------- */
 
@@ -518,6 +622,13 @@ border: none;
 .works-item .title {
     margin-bottom: 4px;
 }
+
+.works-item:hover {
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
 
 
 .works-card {
