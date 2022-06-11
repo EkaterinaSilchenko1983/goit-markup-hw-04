@@ -190,7 +190,6 @@ color: var(--accent-color);
 
 .hero {
     text-align: center;
-    background-color: var(--secondary-background-color);
     
     max-width: 1600px;
     height: 600px;
